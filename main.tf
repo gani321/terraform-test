@@ -1,7 +1,7 @@
 provider "aws" {
-  region     = "ap-south-1"
-  access_key = "AKIAXNVYN5UALSCGKLWW"
-  secret_key = "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"
+  region     = "region"
+  access_key = "access_key"
+  secret_key = "secret_key"
 }
 
 provider "aws" {
@@ -86,7 +86,7 @@ resource "aws_security_group" "allow_sshhttp" {
   }
 }
 resource "aws_instance" "tf" {
-  ami           = "ami-0851b76e8b1bce90b" # ap-west-1
+  ami           = " ami  " # ap-west-1
   instance_type = "t2.micro"
   key_name               = "eee"
   monitoring             = true
